@@ -58,7 +58,7 @@ RegisterCommand('dual', function(a, args, c)
                     SetEntityAnimCurrentTime(ped, "anim@veh@armordillo@turret@base", "sit_aim_down", 0.5)
                 end
                 if IsDisabledControlJustPressed(0, 24) then
-                    if ammoCount >= 0 then
+                    if ammoCount > 0 then
                         SetPedShootsAtCoord(peds[1], endCoords, 0)
                         SetPedShootsAtCoord(peds[2], endCoords, 0)
                         ammoCount = ammoCount - 1
