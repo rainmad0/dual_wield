@@ -17,7 +17,7 @@ end)
 dual = false
 peds = {}
 RegisterCommand('dual', function(a, args, c)
-    if args[1] == nil or type(args[1]) ~= 'string' or not string.match(args[1], 'WEAPON_') and args[1] ~= 'reset' then
+    if args[1] == nil or type(args[1]) ~= 'string' or not string.match(args[1], 'WEAPON_') or args[1] ~= 'reset' then
         print('select weapon, like this: /dual WEAPON_CARBINERIFLE')
         return
     end
