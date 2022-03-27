@@ -5,7 +5,6 @@ victimPedCoords = {
     vector3(-980.08, -3003.8, 13.9450),
     vector3(-981.04, -3005.3, 13.9450),
     vector3(-981.92, -3006.8, 13.9450),
-
 }
 RegisterCommand('spawnpeds', function()
     for i = 1, #victimPedCoords do
